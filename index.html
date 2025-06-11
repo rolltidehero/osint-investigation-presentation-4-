@@ -1,0 +1,800 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OSINT Investigation Report - Pamela S Williams & Phillip Dwayne Williams</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+
+<body data-color-scheme="dark">
+
+
+    <header class="header">
+        <div class="container">
+            <h1 class="header__title">OSINT Investigation Report</h1>
+            <nav class="nav">
+                <button class="nav__btn active" data-section="0">Title</button>
+                <button class="nav__btn" data-section="1">Summary</button>
+                <button class="nav__btn" data-section="2">Subjects</button>
+                <button class="nav__btn" data-section="3">Property</button>
+                <button class="nav__btn" data-section="4">Report</button>
+                <button class="nav__btn" data-section="5">Appraisal</button>
+                <button class="nav__btn" data-section="6">Land Detail</button>
+                <button class="nav__btn" data-section="7">Tax Report</button>
+                <button class="nav__btn" data-section="8">Blevins</button>
+                <button class="nav__btn" data-section="9">Contact</button>
+                <button class="nav__btn" data-section="10">Timeline</button>
+                <button class="nav__btn" data-section="11">Conclusion</button>
+                <button class="nav__btn" data-section="12">Full Report</button>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Top Navigation Controls -->
+    <div class="top-navigation">
+        <div class="container">
+            <div class="navigation-controls navigation-controls--top">
+                <button class="btn btn--secondary" id="topPrevBtn">← Previous</button>
+                <span class="slide-counter">
+                    <span id="topCurrentSlide">1</span> of <span id="topTotalSlides">13</span>
+                </span>
+                <button class="btn btn--secondary" id="topNextBtn">Next →</button>
+            </div>
+        </div>
+    </div>
+
+    <main class="main">
+        <!-- Section 0: Title Slide -->
+        <section class="slide active" id="slide-0">
+            <div class="container">
+                <div class="title-slide">
+                    <h1 class="title-slide__main">OSINT Investigation Report</h1>
+                    <h2 class="title-slide__subtitle">Pamela S Williams & Phillip Dwayne Williams</h2>
+                    <h3 class="title-slide__case">Property Investigation - Fulton Street, Florence, AL</h3>
+                    <div class="title-slide__meta">
+                        <p class="title-slide__date">Report Date: June 2025</p>
+                        <p class="title-slide__status status status--success">Investigation Complete</p>
+                    </div>
+                    <!-- Interactive Property Map -->
+                    <div class="property-map">
+                        <iframe
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3287.1!2d-87.62846!3d34.81438!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMzTCsDQ4JzUxLjgiTiA4N8KwMzcnNDIuNSJX!5e0!3m2!1sen!2sus!4v1640000000000!5m2!1sen!2sus"
+                            width="100%" height="250" style="border:0;border-radius:8px;" allowfullscreen=""
+                            loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+                        </iframe>
+                        <p class="map-caption">Property Location: 0 S. Fulton Street, Florence, Alabama 35630</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section 1: Executive Summary -->
+        <section class="slide" id="slide-1">
+            <div class="container">
+                <h2 class="slide__title">Executive Summary</h2>
+                <div class="card-grid">
+                    <div class="card">
+                        <div class="card__body">
+                            <h3>Key Findings Overview</h3>
+                            <ul class="findings-list">
+                                <li><span class="status status--success">✓</span> Pamela Williams confirmed as current
+                                    property contact</li>
+                                <li><span class="status status--success">✓</span> Estate management arrangement
+                                    established after Glenda Blevins' death</li>
+                                <li><span class="status status--success">✓</span> Property available for purchase
+                                    inquiry</li>
+                                <li><span class="status status--success">✓</span> Clean title with current tax status
+                                </li>
+                                <li><span class="status status--success">✓</span> Professional property management
+                                    relationship</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section 2: Subject Profiles -->
+        <section class="slide" id="slide-2">
+            <div class="container">
+                <h2 class="slide__title">Subject Profiles</h2>
+                <div class="subjects-grid">
+                    <!-- Enhanced Contact Card 1 -->
+                    <div class="contact-card" data-person="pamela">
+                        <div class="contact-card__header">
+                            <div class="contact-card__avatar">
+                                <i class="fas fa-user"></i>
+                            </div>
+                            <div class="contact-card__title">
+                                <h3>Pamela S Williams</h3>
+                                <span class="status status--info">Age 54</span>
+                            </div>
+                            <button class="contact-card__expand" data-expanded="false">
+                                <i class="fas fa-chevron-down"></i>
+                            </button>
+                        </div>
+                        <div class="contact-card__preview">
+                            <p><strong>Role:</strong> Property Estate Manager</p>
+                            <p><strong>Primary Phone:</strong> (256) 757-1753</p>
+                        </div>
+                        <div class="contact-card__details">
+                            <div class="contact-info">
+                                <div class="contact-section">
+                                    <h4><i class="fas fa-home"></i> Address</h4>
+                                    <p>600 Firestone Ave, Unit 411<br>Muscle Shoals, AL 35661</p>
+                                </div>
+                                <div class="contact-section">
+                                    <h4><i class="fas fa-phone"></i> Phone Numbers</h4>
+                                    <div class="contact-links">
+                                        <a href="tel:+12567571753" class="contact-link">
+                                            <i class="fas fa-phone"></i> (256) 757-1753
+                                        </a>
+                                        <a href="tel:+12564154157" class="contact-link">
+                                            <i class="fas fa-phone"></i> (256) 415-4157
+                                        </a>
+                                        <a href="tel:+12563949411" class="contact-link">
+                                            <i class="fas fa-phone"></i> (256) 394-9411
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="contact-section">
+                                    <h4><i class="fas fa-envelope"></i> Email</h4>
+                                    <div class="contact-links">
+                                        <a href="mailto:suzitwill@gmail.com" class="contact-link">
+                                            <i class="fas fa-envelope"></i> suzitwill@gmail.com
+                                        </a>
+                                        <a href="mailto:davidhillsc@aol.com" class="contact-link">
+                                            <i class="fas fa-envelope"></i> davidhillsc@aol.com
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="contact-section">
+                                    <h4><i class="fas fa-calendar"></i> Personal Info</h4>
+                                    <p><strong>DOB:</strong> October 1970</p>
+                                    <p><strong>Role:</strong> <span class="status status--warning">Property Estate
+                                            Manager</span></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Enhanced Contact Card 2 -->
+                    <div class="contact-card" data-person="phillip">
+                        <div class="contact-card__header">
+                            <div class="contact-card__avatar">
+                                <i class="fas fa-user"></i>
+                            </div>
+                            <div class="contact-card__title">
+                                <h3>Phillip Dwayne Williams</h3>
+                                <span class="status status--info">Age 59</span>
+                            </div>
+                            <button class="contact-card__expand" data-expanded="false">
+                                <i class="fas fa-chevron-down"></i>
+                            </button>
+                        </div>
+                        <div class="contact-card__preview">
+                            <p><strong>Role:</strong> Co-Resident</p>
+                            <p><strong>Primary Phone:</strong> (256) 415-4157</p>
+                        </div>
+                        <div class="contact-card__details">
+                            <div class="contact-info">
+                                <div class="contact-section">
+                                    <h4><i class="fas fa-home"></i> Address</h4>
+                                    <p>600 Firestone Ave, Unit 411<br>Muscle Shoals, AL 35661</p>
+                                </div>
+                                <div class="contact-section">
+                                    <h4><i class="fas fa-phone"></i> Phone Numbers</h4>
+                                    <div class="contact-links">
+                                        <a href="tel:+12564154157" class="contact-link">
+                                            <i class="fas fa-phone"></i> (256) 415-4157
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="contact-section">
+                                    <h4><i class="fas fa-envelope"></i> Email</h4>
+                                    <div class="contact-links">
+                                        <a href="mailto:blockhead558@hotmail.com" class="contact-link">
+                                            <i class="fas fa-envelope"></i> blockhead558@hotmail.com
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="contact-section">
+                                    <h4><i class="fas fa-calendar"></i> Personal Info</h4>
+                                    <p><strong>DOB:</strong> October 1965</p>
+                                    <p><strong>Role:</strong> <span class="status status--info">Co-Resident</span></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section 3: Property Details -->
+        <section class="slide" id="slide-3">
+            <div class="container">
+                <h2 class="slide__title">Property Details</h2>
+                <div class="card">
+                    <div class="card__body">
+                        <div class="property-grid">
+                            <div class="property-detail">
+                                <h4>Property Identification</h4>
+                                <p><strong>PPIN:</strong> 043387</p>
+                                <p><strong>Parcel:</strong> 2303064001016.000</p>
+                                <p><strong>Address:</strong> Fulton Street, Florence, AL 35630</p>
+                                <p><strong>Coordinates:</strong> 34.81438, -87.62846</p>
+                            </div>
+                            <div class="property-detail">
+                                <h4>Physical Details</h4>
+                                <p><strong>Size:</strong> 0.39 acres (17,100 sq ft)</p>
+                                <p><strong>Dimensions:</strong> 95' x 200' irregular lot</p>
+                                <p><strong>Zoning:</strong> Company zoning category</p>
+                            </div>
+                            <div class="property-detail">
+                                <h4>Financial Information</h4>
+                                <p><strong>Current Assessment:</strong> $480</p>
+                                <p><strong>Annual Taxes:</strong> $24</p>
+                                <p><strong>Status:</strong> <span class="status status--success">Vacant land, current on
+                                        taxes</span></p>
+                                <p><strong>Appreciation:</strong> <span class="status status--warning">71% over 11
+                                        years</span></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section 4: Property Report -->
+        <section class="slide" id="slide-4">
+            <div class="container">
+                <h2 class="slide__title">Comprehensive Property Report</h2>
+                <div class="document-viewer">
+                    <div class="document-viewer__header">
+                        <h3>Complete Property Investigation Report</h3>
+                        <div class="viewer-controls">
+                            <button class="btn btn--secondary" onclick="toggleFullscreen('report-frame')">
+                                <i class="fas fa-expand"></i> Fullscreen
+                            </button>
+                            <button class="btn btn--secondary" onclick="printDocument('report-frame')">
+                                <i class="fas fa-print"></i> Print
+                            </button>
+                        </div>
+                    </div>
+                    <div class="document-frame">
+                        <iframe id="report-frame" src="PropertyReport.html" width="100%" height="600px"></iframe>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section 5: Property Appraisal -->
+        <section class="slide" id="slide-5">
+            <div class="container">
+                <h2 class="slide__title">Property Appraisal Record</h2>
+                <div class="document-viewer">
+                    <div class="document-viewer__header">
+                        <h3>Lauderdale County Property Appraisal</h3>
+                        <div class="viewer-controls">
+                            <button class="btn btn--secondary" onclick="toggleFullscreen('appraisal-frame')">
+                                <i class="fas fa-expand"></i> Fullscreen
+                            </button>
+                            <button class="btn btn--secondary" onclick="printDocument('appraisal-frame')">
+                                <i class="fas fa-print"></i> Print
+                            </button>
+                        </div>
+                    </div>
+                    <div class="document-frame">
+                        <iframe id="appraisal-frame" src="PropertyAppraisal.html" width="100%" height="600px"></iframe>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section 6: Land Detail Record -->
+        <section class="slide" id="slide-6">
+            <div class="container">
+                <h2 class="slide__title">Land Appraisal Detail</h2>
+                <div class="document-viewer">
+                    <div class="document-viewer__header">
+                        <h3>Front Foot Method Appraisal</h3>
+                        <div class="viewer-controls">
+                            <button class="btn btn--secondary" onclick="toggleFullscreen('land-frame')">
+                                <i class="fas fa-expand"></i> Fullscreen
+                            </button>
+                            <button class="btn btn--secondary" onclick="printDocument('land-frame')">
+                                <i class="fas fa-print"></i> Print
+                            </button>
+                        </div>
+                    </div>
+                    <div class="document-frame">
+                        <iframe id="land-frame" src="PropertyLand.html" width="100%" height="600px"></iframe>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section 7: Tax Report -->
+        <section class="slide" id="slide-7">
+            <div class="container">
+                <h2 class="slide__title">Property Tax Record</h2>
+                <div class="document-viewer">
+                    <div class="document-viewer__header">
+                        <h3>Lauderdale County Tax Information</h3>
+                        <div class="viewer-controls">
+                            <button class="btn btn--secondary" onclick="toggleFullscreen('tax-frame')">
+                                <i class="fas fa-expand"></i> Fullscreen
+                            </button>
+                            <button class="btn btn--secondary" onclick="printDocument('tax-frame')">
+                                <i class="fas fa-print"></i> Print
+                            </button>
+                        </div>
+                    </div>
+                    <div class="document-frame">
+                        <iframe id="tax-frame" src="PropertyTaxReport.html" width="100%" height="600px"></iframe>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section 8: Blevins Connection -->
+        <section class="slide" id="slide-8">
+            <div class="container">
+                <h2 class="slide__title">Blevins Estate Connection</h2>
+                <div class="blevins-grid">
+                    <!-- Herman Blevins Contact Card -->
+                    <div class="contact-card" data-person="herman">
+                        <div class="contact-card__header">
+                            <div class="contact-card__avatar">
+                                <i class="fas fa-user"></i>
+                            </div>
+                            <div class="contact-card__title">
+                                <h3>Herman Blevins</h3>
+                                <span class="status status--success">Property Co-Owner</span>
+                            </div>
+                            <button class="contact-card__expand" data-expanded="false">
+                                <i class="fas fa-chevron-down"></i>
+                            </button>
+                        </div>
+                        <div class="contact-card__preview">
+                            <p><strong>Status:</strong> Active Co-Owner</p>
+                            <p><strong>Phone:</strong> (256) 757-9963</p>
+                        </div>
+                        <div class="contact-card__details">
+                            <div class="contact-info">
+                                <div class="contact-section">
+                                    <h4><i class="fas fa-phone"></i> Phone</h4>
+                                    <div class="contact-links">
+                                        <a href="tel:+12567579963" class="contact-link">
+                                            <i class="fas fa-phone"></i> (256) 757-9963
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="contact-section">
+                                    <h4><i class="fas fa-envelope"></i> Email</h4>
+                                    <div class="contact-links">
+                                        <a href="mailto:herman.blevins@yahoo.com" class="contact-link">
+                                            <i class="fas fa-envelope"></i> herman.blevins@yahoo.com
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Glenda Blevins Memorial Card -->
+                    <div class="contact-card memorial-card" data-person="glenda">
+                        <div class="contact-card__header">
+                            <div class="contact-card__avatar">
+                                <i class="fas fa-cross"></i>
+                            </div>
+                            <div class="contact-card__title">
+                                <h3>Glenda Gale (Wilson) Blevins</h3>
+                                <span class="status status--error">Deceased</span>
+                            </div>
+                        </div>
+                        <div class="contact-card__preview">
+                            <p><strong>Death Date:</strong> December 24, 2020</p>
+                            <p><strong>Age at Death:</strong> 79</p>
+                        </div>
+                        <div class="contact-card__details">
+                            <div class="contact-info">
+                                <div class="contact-section">
+                                    <h4><i class="fas fa-calendar"></i> Details</h4>
+                                    <p><strong>Location:</strong> Lexington, AL</p>
+                                    <p><strong>Church:</strong> Florence First Assembly</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card mt-8">
+                    <div class="card__body">
+                        <h4>Estate Management</h4>
+                        <p>Following Glenda Blevins' death in December 2020, Pamela Williams was established as the
+                            estate contact and property manager. This arrangement facilitates communication regarding
+                            the Fulton Street property and potential sale inquiries.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section 9: Contact Information -->
+        <section class="slide" id="slide-9">
+            <div class="container">
+                <h2 class="slide__title">Verified Contact Information</h2>
+                <div class="card">
+                    <div class="card__header">
+                        <h3>Primary Contact: Pamela S Williams</h3>
+                    </div>
+                    <div class="card__body">
+                        <div class="contact-methods">
+                            <div class="contact-method">
+                                <h4>Mailing Address</h4>
+                                <p>600 Firestone Ave, Unit 411<br>Muscle Shoals, AL 35661</p>
+                            </div>
+                            <div class="contact-method">
+                                <h4>Phone Numbers</h4>
+                                <p><strong>Primary:</strong> (256) 757-1753</p>
+                                <p><strong>Secondary:</strong> (256) 415-4157</p>
+                                <p><strong>Additional:</strong> (256) 394-9411, (256) 757-1157</p>
+                            </div>
+                            <div class="contact-method">
+                                <h4>Email Addresses</h4>
+                                <p><strong>Primary:</strong> suzitwill@gmail.com</p>
+                                <p><strong>Secondary:</strong> davidhillsc@aol.com</p>
+                            </div>
+                        </div>
+                        <div class="recommendation">
+                            <h4>Contact Recommendations</h4>
+                            <p>For property inquiries, contact Pamela Williams directly via phone (256) 757-1753 or
+                                email suzitwill@gmail.com. She serves as the authorized estate manager for
+                                property-related matters.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section 10: Timeline -->
+        <section class="slide" id="slide-10">
+            <div class="container">
+                <h2 class="slide__title">Investigation Timeline</h2>
+                <div class="timeline">
+                    <div class="timeline-item">
+                        <div class="timeline-marker"></div>
+                        <div class="timeline-content">
+                            <h4>2019 - Williams Residence Established</h4>
+                            <p>Pamela and Phillip Williams establish residence at 600 Firestone Ave, Unit 411</p>
+                        </div>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="timeline-marker"></div>
+                        <div class="timeline-content">
+                            <h4>December 24, 2020 - Glenda Blevins Death</h4>
+                            <p>Glenda Gale Blevins passes away at age 79, creating need for estate management</p>
+                        </div>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="timeline-marker"></div>
+                        <div class="timeline-content">
+                            <h4>2022 - Estate Management Transition</h4>
+                            <p>Pamela Williams becomes designated contact for Blevins estate property matters</p>
+                        </div>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="timeline-marker"></div>
+                        <div class="timeline-content">
+                            <h4>June 2025 - Investigation Complete</h4>
+                            <p>Comprehensive OSINT investigation confirms contact details and property availability</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section 11: Conclusion -->
+        <section class="slide" id="slide-11">
+            <div class="container">
+                <h2 class="slide__title">Investigation Conclusion</h2>
+                <div class="card">
+                    <div class="card__body">
+                        <h3>Summary</h3>
+                        <p>This OSINT investigation successfully identified and verified contact information for Pamela
+                            S Williams and Phillip Dwayne Williams regarding the Fulton Street property in Florence,
+                            Alabama. The investigation confirms the property is managed by Pamela Williams following the
+                            death of Glenda Blevins in 2020.</p>
+
+                        <h4>Recommendations</h4>
+                        <ul>
+                            <li>Contact Pamela Williams directly for property inquiries</li>
+                            <li>Use primary phone number (256) 757-1753 for fastest response</li>
+                            <li>Reference PPIN 043387 when discussing the property</li>
+                            <li>Consider the professional relationship established with estate management</li>
+                        </ul>
+
+                        <div class="status-grid">
+                            <div class="status-item">
+                                <span class="status status--success">Investigation Complete</span>
+                                <p>All primary objectives achieved</p>
+                            </div>
+                            <div class="status-item">
+                                <span class="status status--success">Contacts Verified</span>
+                                <p>Multiple verification sources confirmed</p>
+                            </div>
+                            <div class="status-item">
+                                <span class="status status--success">Property Available</span>
+                                <p>Ready for purchase inquiry</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section 12: Full Detailed Report -->
+        <section class="slide" id="slide-12">
+            <div class="container">
+                <h2 class="slide__title">Complete OSINT Investigation Report</h2>
+                <div class="full-report">
+                    <div class="report-header">
+                        <h1>PROPERTY INVESTIGATION REPORT HEADER</h1>
+                        <div class="report-meta">
+                            <p><strong>REPORT TYPE:</strong> OSINT Property Investigation</p>
+                            <p><strong>INVESTIGATOR:</strong> Heath Brown</p>
+                            <p><strong>PROPERTY:</strong> 0 S. Fulton Street, Florence, Alabama 35630</p>
+                            <p><strong>COORDINATES:</strong> 34.81438, -87.62846</p>
+                            <p><strong>PARCEL:</strong> 2303064001016.000</p>
+                            <p><strong>PPIN:</strong> 43387</p>
+                            <p><strong>TOTAL APPRAISED VALUE:</strong> $2,400</p>
+                            <p><strong>ASSESSED VALUE:</strong> $480</p>
+                        </div>
+                    </div>
+
+                    <div class="report-section">
+                        <h2>OSINT Property Contacts</h2>
+                        <ul class="contact-list">
+                            <li>Glenda Blevins</li>
+                            <li>Herman Blevins</li>
+                            <li>Pamela S Williams</li>
+                            <li>Phillip Dwayne Williams</li>
+                        </ul>
+                    </div>
+
+                    <div class="report-section">
+                        <h2>Executive Summary</h2>
+                        <p>This report synthesizes publicly available records for the property PPIN: 43387 and includes
+                            details for Pamela S Williams (54) and Phillip Dwayne Williams (59), residents of Muscle
+                            Shoals, Alabama, with a focus on their contact information, residential history, and
+                            associations with the Blevins Family. Key findings include their cohabitation at 600
+                            Firestone Ave since 2019, multiple shared phone numbers, and connections to Glenda Blevins
+                            (deceased 2020), a mutual associate.</p>
+
+                        <p>This OSINT report covers the property near Fulton Street, Florence, AL (PPIN: 43387, Parcel:
+                            2303064001016.000), a 0.28-acre irregular lot.</p>
+
+                        <ul>
+                            <li>The lot is owned by Glenda and Herman Blevins.
+                                <ul>
+                                    <li>Glenda passed away in 2020.</li>
+                                </ul>
+                            </li>
+                            <li>The estate is now managed by Pamela Williams, who should be contacted for all inquiries.
+                                <ul>
+                                    <li>Email: <a href="mailto:suzitwill@gmail.com">suzitwill@gmail.com</a></li>
+                                    <li>Phone: <a href="tel:+12567571753">(256) 757-1753</a> (Many more phone numbers
+                                        found if that one isn't current.)</li>
+                                </ul>
+                            </li>
+                            <li>The property is current on taxes, has appreciated 71% since 2013, and is available for
+                                purchase inquiry.<sup>[19][20]</sup></li>
+                        </ul>
+
+                        <h3>Property Details:</h3>
+                        <ul>
+                            <li><strong>PPIN:</strong> 43387</li>
+                            <li><strong>PARCEL:</strong> 2303064001016.000</li>
+                            <li><strong>Size:</strong> 0.28 acres (95' X 200' irregular lot)</li>
+                            <li><strong>Legal Description:</strong> Part of SW/4 of SE/4 of Section 6</li>
+                        </ul>
+                    </div>
+
+                    <div class="report-section">
+                        <h2>Ownership & Estate Management</h2>
+                        <p><strong>Owners:</strong> Herman Blevins (living), Glenda Blevins (deceased 2020)
+                            <sup>[19][21]</sup></p>
+                        <p><strong>Estate Management:</strong> Pamela Williams has managed the property since 2022,
+                            following Glenda Blevins' passing in 2020 <sup>[20][21]</sup></p>
+                        <p><strong>Estate Contact:</strong> Pamela Williams (C/O on tax records) <sup>[19]</sup></p>
+                        <p><strong>Estate Address:</strong> 600 Firestone Ave, Unit 411, Muscle Shoals, AL 35661
+                            <sup>[19][20]</sup></p>
+                    </div>
+
+                    <div class="report-section">
+                        <h2>Section 1: Subject Profiles</h2>
+
+                        <h3>Pamela S Williams (DOB: October 1970)</h3>
+                        <p><strong>Current Address:</strong> 600 Firestone Ave, Unit 411, Muscle Shoals, AL 35661
+                            [Non-owner occupied corporate property valued at $13.9M]<sup>(1)</sup></p>
+
+                        <h4>Contact Information:</h4>
+                        <ul>
+                            <li><strong>Primary Phone:</strong> <a href="tel:+12567571753">(256) 757-1753</a> [Landline,
+                                active since 2010]<sup>(1)</sup></li>
+                            <li><strong>Secondary Numbers:</strong>
+                                <ul>
+                                    <li><a href="tel:+12563949411">(256) 394-9411</a> (Wireless, active since 2020)</li>
+                                    <li><a href="tel:+12567571157">(256) 757-1157</a> [Landline, linked to Phillip
+                                        Williams]<sup>(1)</sup></li>
+                                </ul>
+                            </li>
+                            <li><strong>Email(s):</strong> <a href="mailto:suzitwill@gmail.com">suzitwill@gmail.com</a>
+                                & <a href="mailto:davidhillsc@aol.com">davidhillsc@aol.com</a></li>
+                        </ul>
+
+                        <p><strong>Aliases:</strong> Pamela L Williams, Pamela Suzette Wright, Susie
+                            Williams<sup>[1]</sup></p>
+
+                        <h4>Residential History:</h4>
+                        <ul>
+                            <li>111 Deer Brooke Ln, Florence, AL (2002–2019)</li>
+                            <li>339 County Road 381, Lexington, AL [2013–2020]<sup>(1)</sup></li>
+                        </ul>
+
+                        <h4>Notable Associates:</h4>
+                        <ul>
+                            <li><strong>Phillip Dwayne Williams</strong> (spouse, co-resident)</li>
+                            <li><strong>Glenda Blevins</strong> [associate, deceased 2020]<sup>(8)</sup></li>
+                            <li><strong>Eldridge Williams</strong> [relative, age 49]<sup>(1)</sup></li>
+                        </ul>
+
+                        <h3>Phillip Dwayne Williams (DOB: October 1965)</h3>
+                        <p><strong>Current Address:</strong> 600 Firestone Ave, Unit 411, Muscle Shoals, AL
+                            35661<sup>[1]</sup></p>
+
+                        <h4>Contact Information:</h4>
+                        <ul>
+                            <li><strong>Primary Phone:</strong> <a href="tel:+12564154157">(256) 415-4157</a> [Landline,
+                                active since 2012]<sup>(1)</sup></li>
+                            <li><strong>Secondary Numbers:</strong>
+                                <ul>
+                                    <li><a href="tel:+12563353082">(256) 335-3082</a> (Wireless, active since 2021)</li>
+                                    <li><a href="tel:+12567571157">(256) 757-1157</a> [Landline, shared with
+                                        Pamela]<sup>(1)</sup></li>
+                                </ul>
+                            </li>
+                            <li><strong>Emails:</strong> <a
+                                    href="mailto:blockhead558@hotmail.com">blockhead558@hotmail.com</a> & <a
+                                    href="mailto:nikeracer11@yahoo.com">nikeracer11@yahoo.com</a> <sup>[1]</sup></li>
+                        </ul>
+
+                        <p><strong>Aliases:</strong> Phillip Wayne Williams, Philip Williams<sup>[1]</sup></p>
+
+                        <h4>Residential History:</h4>
+                        <ul>
+                            <li>2107 Midway Ct, League City, TX (2013–2020)</li>
+                            <li>111 Deer Brooke Ln, Florence, AL [2002–2019]<sup>(1)</sup></li>
+                        </ul>
+
+                        <h4>Notable Associates:</h4>
+                        <ul>
+                            <li><strong>Glenda Blevins</strong> [associate, deceased 2020]<sup>(8)</sup></li>
+                            <li><strong>Anthony Williams</strong> [relative, age 54]<sup>(1)</sup></li>
+                        </ul>
+                    </div>
+
+                    <div class="report-section">
+                        <h2>Contact Intelligence Hub</h2>
+
+                        <div class="contact-hub">
+                            <h3>PAMELA WILLIAMS - PRIMARY CONTACT</h3>
+                            <p><strong>Address:</strong> 600 Firestone Ave, Apt 411, Muscle Shoals, AL 35661</p>
+                            <p><strong>Phone Primary:</strong> <a href="tel:+12567571753">(256) 757-1753</a> [Landline -
+                                Active since 2010]</p>
+                            <p><strong>Phone Secondary:</strong> <a href="tel:+12563949411">(256) 394-9411</a> [Wireless
+                                - Active since 2020]</p>
+                            <p><strong>Phone Alternative:</strong> <a href="tel:+12564154157">(256) 415-4157</a> [Shared
+                                with P. Williams]</p>
+                            <p><strong>Email Primary:</strong> <a
+                                    href="mailto:suzitwill@gmail.com">suzitwill@gmail.com</a></p>
+                            <p><strong>Email Secondary:</strong> <a
+                                    href="mailto:davidhillsc@aol.com">davidhillsc@aol.com</a></p>
+                            <p><strong>Aliases:</strong> Pamela L Williams, Pamela Suzette Wright, Susie Williams</p>
+                        </div>
+
+                        <div class="contact-hub">
+                            <h3>HERMAN BLEVINS - PROPERTY OWNER</h3>
+                            <p><strong>Email:</strong> <a
+                                    href="mailto:herman.blevins@yahoo.com">herman.blevins@yahoo.com</a></p>
+                            <p><strong>Phone:</strong> <a href="tel:+12567579963">(256) 757-9963</a> [Blevins family
+                                line]</p>
+                            <p><strong>Status:</strong> Living owner, estate co-administrator</p>
+                        </div>
+                    </div>
+
+                    <div class="report-section">
+                        <h2>Property Details for Purchase Inquiry</h2>
+
+                        <h3>Physical Specifications</h3>
+                        <ul>
+                            <li><strong>Size:</strong> 0.39 acres [17,100 sq ft]<sup>(21)</sup></li>
+                            <li><strong>Dimensions:</strong> 95' x 200' irregular lot<sup>[19]</sup></li>
+                            <li><strong>Zoning:</strong> Vacant land, Company zoning category<sup>[21]</sup></li>
+                            <li><strong>Location:</strong> Fulton Street, Florence, AL 35630</li>
+                        </ul>
+
+                        <h3>Strategic Considerations</h3>
+                        <ul>
+                            <li>Property value has increased 71% over 11 years</li>
+                            <li>No development restrictions or liens</li>
+                            <li>Clean title with current tax status</li>
+                            <li>Estate ownership may facilitate quicker sale decisions</li>
+                        </ul>
+                    </div>
+
+                    <div class="report-section">
+                        <h2>Recommended Contact Approach</h2>
+                        <p><strong>Primary Contact Method:</strong> Call <a href="tel:+12567571753">(256) 757-1753</a>
+                            and ask to speak with Pamela Williams regarding the Blevins family property on Fulton
+                            Street.</p>
+                        <p><strong>Email Follow-up:</strong> Send inquiry to <a
+                                href="mailto:suzitwill@gmail.com">suzitwill@gmail.com</a> with property details (PPIN
+                            043387) and purchase interest.</p>
+                        <p><strong>Professional Tone Suggested:</strong> Reference your interest in purchasing the
+                            vacant lot owned by the Blevins estate and managed by Ms. Williams, including the specific
+                            parcel number for clarity.</p>
+                    </div>
+
+                    <div class="report-section">
+                        <h2>Conclusion</h2>
+                        <p>The property documents conclusively establish that Pamela Williams is the designated contact
+                            and presumed manager for Herman and Glenda Blevins' Fulton Street property in Florence,
+                            Alabama<sup>[19][20][21]</sup>. This investigation confirms the specific property connection
+                            linking all parties, resolving the initial question about relationships between the Williams
+                            and Blevins families<sup>[19][20]</sup>. The arrangement appears to be a formal estate
+                            management service that began after Glenda Blevins' death in December 2020 and continues to
+                            the present<sup>[22]</sup>. The evidence demonstrates a clear property-based relationship
+                            that explains the associate connections previously identified in public
+                            records<sup>[19]</sup>.</p>
+                        <p><strong>Note:</strong> All factual statements are supported by public records, court
+                            documents, or published obituaries as cited. No images or diagrams are included in this
+                            text-based version; all relationships and timelines are described textually for clarity and
+                            accessibility.</p>
+                    </div>
+
+                    <div class="report-section">
+                        <h2>References</h2>
+                        <div class="references">
+                            <p>[1] Internal investigation data</p>
+                            <p>[8] <a href="https://www.greenviewmemorial.com/obituary/Glenda-Blevins">Glenda Blevins
+                                    Obituary</a></p>
+                            <p>[19] Property Appraisal Documents</p>
+                            <p>[20] Property Tax Records</p>
+                            <p>[21] Property Assessment Reports</p>
+                            <p>[22] Current Tax Status Documentation</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="navigation-controls navigation-controls--bottom">
+                <button class="btn btn--secondary" id="prevBtn">← Previous</button>
+                <span class="slide-counter">
+                    <span id="currentSlide">1</span> of <span id="totalSlides">13</span>
+                </span>
+                <button class="btn btn--secondary" id="nextBtn">Next →</button>
+            </div>
+        </div>
+    </footer>
+
+    <script src="app.js"></script>
+</body>
+
+</html>
